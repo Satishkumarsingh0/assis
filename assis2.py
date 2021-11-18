@@ -1,3 +1,13 @@
+# in terminal install these
+# pip install pyttsx3
+# pip install SpeechRecognition
+# pip install wikipedia
+# pip install pyjokes
+# pip install wheel
+# pip install pipwin
+# pipwin install PyAudio
+# pip install C:\Assis\PyAudio-0.2.11-cp310-cp310-win_amd64.whl
+
 import pyttsx3
 import speech_recognition as sr
 import datetime
