@@ -1,4 +1,4 @@
-Before running the program, we must install these modules via pip in kernel :
+Before running the program, we must install these modules via pip in terminal :
 pyttsx3 : pip install pyttsx3
 speech_recognition : pip install Speech_Recognition
 wheel : pip install wheel
@@ -30,6 +30,7 @@ External PyAudio versions which is supported to your system named :
                        https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 
+for python 3.8.2, 64 bit recommended PyAudio version : - https://download.lfd.uci.edu/pythonlibs/w6tyco5e/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 
 ------------------------------------------------------------------------------------------
 
