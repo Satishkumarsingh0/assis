@@ -1,3 +1,5 @@
+main executable code file naem :  assis2.py
+
 Before running the program, we must install these modules via pip in terminal :
 pyttsx3 : pip install pyttsx3
 speech_recognition : pip install Speech_Recognition
