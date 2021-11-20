@@ -25,7 +25,7 @@ engine.setProperty('voice', voices[1].id)
 
 my_assis = Tk()
 my_assis.geometry('400x480')
-#my_assis.configure(bg='pink')
+my_assis.configure(bg='skyblue')
 my_assis.title('Assis - Dummy Assistant')
 
 
@@ -52,6 +52,7 @@ def welcome():
 def input_command():
     r = sr.Recognizer()
 
+    print(sr.Microphone.list_microphone_names())
     lb11 = Label(my_assis, text='Listening...')
     lb12 = Label(my_assis, text='Recognising....')
 
@@ -71,11 +72,13 @@ def input_command():
 
         print("Listening...")
         r.pause_threshold = 1.5
+        r.adjust_for_ambient_noise(source, duration=1)
         audio = r.listen(source)
         lb11show()
 
     try:
         print("Recognizing...")
+
         query = r.recognize_google(audio, language='en-in')
         print(f"command received: {query}\n")
         lb12show()
@@ -98,7 +101,7 @@ def myf1():
     clear()
 
     welcome()
-    if _name_ == "_main_":
+    if __name__ == "__main__":
 
         clear = lambda: os.system('cls')
 
